@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="star__area">
+        <img src="assets/images/icon-star.svg" alt="">
+      </div>
+    </header>
+    <section class="app__screen">
+      <h1 class="app__question">How did we do?</h1>
+      <span class="app__desc">Please let us know how we did with your support request. All feedback is appreciated to
+        help us improve our offering!
+      </span>
+      <form>
+        <div class="rate__area">
+          <label for="radio1"><input type="radio" class="input__rate" name="rate" onclick="checkInputs()" value="1"
+              id="radio1">1</label>
+          <label for="radio2"><input type="radio" class="input__rate" name="rate" onclick="checkInputs()" value="2"
+              id="radio2">2</label>
+          <label for="radio3"><input type="radio" class="input__rate" name="rate" onclick="checkInputs()" value="3"
+              id="radio3">3</label>
+          <label for="radio4"><input type="radio" class="input__rate" name="rate" onclick="checkInputs()" value="4"
+              id="radio4">4</label>
+          <label for="radio5"><input type="radio" class="input__rate" name="rate" onclick="checkInputs()" value="5"
+              id="radio5">5</label>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+    <section class="thanks__screen">
+      <img src="assets/images/illustration-thank-you.svg" alt="thanks">
+      <span class="rated__message">You selected <i>4</i> out of 5</span>
+
+      <h2 class="thanks__title">Thank you!</h2>
+
+      <span class="thanks__message">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </span>
+    </section>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
